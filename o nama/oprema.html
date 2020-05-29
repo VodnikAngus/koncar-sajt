@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="rgb(26, 26, 26)">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Раде Кончар</title>
+        <link rel="shortcut icon" href="../assets/images/small.png">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="manifest" href="../manifest.json">    
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/materialize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/header.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/sidebar.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/hamburgers.css">
+
+        <script src="../assets/scripts/header.js"></script>
+        <script src="../assets/scripts/sidebar.js"></script>
+    </head>
+
+    <body onload="bar()">
+
+        <div class="header">
+            <p>
+                <a
+                    href="https://www.google.rs/maps/place/%D0%91%D1%80%D0%B0%D1%9B%D0%B5+%D0%93%D1%80%D0%B8%D0%BC+32,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4+11000/@44.8149466,20.4795316,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7abde472311b:0x50b961c851a8ce5b!8m2!3d44.8149466!4d20.4817203">
+                    Браће Грим 32
+                </a> | <a
+                    href="https://www.google.rs/maps/place/Electrotechnical+school+%22Rade+Koncar%22/@44.8154566,20.5136807,19.25z/data=!4m12!1m6!3m5!1s0x475a7a5f96e7b5c5:0xed4a63589dc12207!2z0KHRgNC10LTRmtCwINGC0LXRhdC90LjRh9C60LAg0J_QotCiINGI0LrQvtC70LA!8m2!3d44.8157536!4d20.513428!3m4!1s0x0:0x6faf011855e03c26!8m2!3d44.8155927!4d20.5133912">
+                    Сврљишка 1
+                </a>
+                <a id="broj" href="tel: +3812761-963">
+                    011/2761-963
+                </a>
+            </p>
+        </div>
+
+        <div id="navbar" class="nonsticky">
+            <a href="../index.html"><img unselectable="on" class="unselectable"
+                src="../assets/images/koncar.svg" alt="logo" width="100px"></img></a>
+            <div id="burger" class="hamburger hamburger--minus" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </div>
+            <h1><a id="naslov" href="../index.html">Раде Кончар</a></h1>
+            <pre unselectable="on" class="clear unselectable">
+        </div>
+
+        <div id="sidecontainer">
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <ul unselectable="on" class="collapsible collapsible-accordion unselectable">
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../index.html">Почетак</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">О нама <i class="material-icons">keyboard_arrow_down</i></a> 
+                    </div>
+                    <div class="collapsible-body">
+                            <a href="upis.html">Упис</a>
+                            <a href="oprema.html">Опрема по кабинетима</a>
+                            <a href="kroz-istoriju.html">Кроз историју</a>
+                            <a href="zaposleni.html">Запослени</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Образовни профили <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../smerovi/rashladni-uredjaji.html">Расхладни уређаји</a>
+                        <a href="../smerovi/procesno-upravljanje.html">Процесно управљање</a>
+                        <a href="../smerovi/energetika.html">Енергетика</a>
+                        <a href="../smerovi/elektronika.html">Електроника</a>
+                        <a href="../smerovi/multimedija.html">Мултимедија</a>
+                        <a href="../smerovi/IT.html">Информационе технологије</a>
+                        <a href="../smerovi/racunari.html">Рачунари</a>
+                        <a href="../smerovi/elektronika-vozila.html">Електроника на возилима</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Ученици <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../vanredni.html">Ванредни ученици</a>
+                        <a href="../ucenici/parlament.html">Ученички парламент</a>
+                        <a href="../ucenici/stop-nasilju.html">Стоп насиљу</a>
+                        <a href="../ucenici/sekcija-energetika.html">Енергетска ефикасност</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Организација рада <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../organizacija rada/statut-propisi-pravilnici.html">Статут, прописи, правилници</a>
+                        <a href="../organizacija rada/dokumenta.html">Документа</a>
+                        <a href="../organizacija rada/savet-roditelja.html">Савет родитеља</a>
+                        <a href="../organizacija rada/skolski-odbor.html">Школски одбор</a>
+                        <a href="../organizacija rada/javne-nabavke.html">Јавне набавке</a>
+                        <a href="../organizacija rada/biblioteka.html">Библиотека</a>
+                        <a href="../organizacija rada/skolski-kalendar.html">Школски календар</a>
+                        <a href="../organizacija rada/koliko-do-zvona.html">Колико до звона</a>
+                        <a href="../organizacija rada/otvorena-vrata.html">Отворена врата</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Наставни материјал <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../nastavni materijal/matura.html">Матура</a>
+                        <a href="../nastavni materijal/spisak-udzbenika.html">Списак уџбеника</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../kontakt.html">Контакт</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contentWrap">
+            <center>
+                <h1>Опрема по кабинетима</h1>
+            </center>
+            <p>
+                <h2>ПРИЗЕМЉЕ:</h2>
+                <h2>1. Лабораторија за Мерења у електроници и медицинске уређаје</h2>
+                <br>
+                <p>Осцилоскопи, генератори функција, макете за поједине елементе, блок шеме…мултимрдијална радна станица</p>
+                <br><br>
+                <h2>2. Кабинет за информатику</h2>
+                <br>
+                <p>15рачунара Пентиум 3 600MHz, 1 Пентиум 4 2,4GHz,1 Пентиум 22×400MHz</p>
+                <br><br>
+                <h2>3. Мултимедијални кабинет</h2>
+                <br>
+                <p>Монтажни сто-миксета, Паметна табла, камере, осцилоскопи, шеме,макете, мерни инструменти</p>
+                <br><br>
+                <h2>4. Радионица за термичке и расхладне уређаје</h2>
+                <br>
+                <p>Расхладни и термички уређаји, алат, компресори,кондензатори, испаривачи…</p>
+                <br><br>
+                <h2>5. Блок просторија за аутоелектронику</h2>
+                <br>
+                <p>
+                    1.      Возило Yugo Koral 1.1 l, Peugeot-мотор; <br>
+                    2.      Возило Oldsmobile Ninety Eight 3,83,8 лит; <br>
+                    3.      Испитни сто за електричне машине на возилима”BOSCH”; <br>
+                    4.      Уређај за дијагностику возила: <br>
+                    – BOSCH КТС 651 – 2ком <br>
+                    – BOSCH КТС 550  – 1 ком <br>
+                    – АТАЛ 520М – 1ком <br>
+                    – АТАЛ Multi scope- 1ком <br>
+                    5.      Уређај за сервисирање клима уређаја на возилима; <br>
+                    6.      Дизалица двостубна 3,2т;  <br>
+                    7.      Уређај за мерење емисије издувних гасова на бензинским и дизел моторима; <br>
+                    8.      Компресори;  <br>
+                    9.      Уређаји за подешавање фарова – 2ком;  <br>
+                    10.  Уређаји чишћење и UV прање бризгаљки; <br>
+                    11.  Манометри за мерење компресије бензинских и дизел мотора; <br>
+                    12.  Софтверски пакети са електронским сервисним информацијама за возила (ESI tronic, Work Shop, Autodata, SUN SAIS, ELSA Win, MITCHELL,…..)  <br>
+                    13.  Комплети алата за аутомеханичара и аутоелектричара;  <br>
+                    14.  Остало мерни уређаји и инструменти за оправку и  дијагностику кварова на возилима (Осцилоскопи, Стробоскопи, Уређаји за тражење кратког споја у инсталацији, итд.)
+                </p>
+                <br><br>
+                <h2>6. Радионица за електромоторне погоне</h2>
+                <br>
+                <p>Дизалица, три лифта,припадајућа аутоматика,макете инструменти…</p>
+                <br><br>
+                <h2>7. Радионица за електротехничку и металску праксу</h2>
+                <br>
+                <p>Струг, бушилица, брусилице, стеге за механичку обраду, аутомати за инсталације, бројила, прекидачи, склопници, електротехнички инсталациони прибор…</p>
+                <br><br>
+                <h2>8. Радионица за енергетику</h2>
+                <br>
+                <p>Каблови, кабловске спојницеи главе, алати за рад на електричним инсталацијама, трансформатори, мотори, бројила…</p>
+                <br><br>
+                <h2>I СПРАТ:</h2>
+                <h2>9. Лабораторија за дигиталну електронику</h2>
+                <br>
+                <p>Рачунари, макете,пратећа опрема</p>
+                <br><br>
+                <h2>10. Лабораторија за електронику</h2>
+                <br>
+                <p>Осцилоскопи, Генератори функције,Дигитални мултимери компатибилни и пратећа опрема</p>
+                <br><br>
+                <h2>11. Лабораторија за електрична мерења</h2>
+                <br>
+                <p>Мерни инструменти и пратећа опрема</p>
+                <br><br>
+                <h2>12. Лабораторија за електричне машине</h2>
+                <br>
+                <p>два асинхрона мотора контролисана омрон контролером, 15 умрежених рачунара, машина једносмерне струје, асинхрони мотор, исправљачи, трансформатори, аутотрансформатори , пратећа опрема</p>
+                <br><br>
+                <h2>12. Лабораторија за енергетску електронику</h2>
+                <br>
+                <p>макете, мерни инструменти, пратећа опрема</p>
+            </p>
+        </div>
+
+    </body>
+</html>

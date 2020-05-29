@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.sidenav {
+    height: calc(100vh - 133px);
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 133px; 
+    right: 0;
+    background-color: rgb(30, 30, 30); 
+    overflow-x: hidden;
+    padding: 25px 0; 
+    transition: 0.5s;
+
+}
+  
+.sidenav a {
+    white-space: nowrap;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 400;
+    color: #919191;
+    display: block;
+    transition: 0.3s;
+    width: 100%;
+    outline: 0;
+}
+
+.opened {
+    width: 500px;
+}
+
+.closed {
+    width: 0;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav ul {
+    display: contents;
+    width: 100%;
+    margin: 0px;
+    margin-right: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.collapsible .material-icons {font-size: 15pt;}
+
+@media screen and (max-width: 550px) {
+    .sidenav a {font-size: 18px;}
+    .opened {width: 100vw;}
+    .collapsible .material-icons {font-size: 12pt;}
+}
+
+.hideside {
+    visibility: hidden;
+}
+
+#sidecontainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100vw - 500px);
+    height: 100vh;
+    z-index: 4;
+}
+
+
+.collapsible, .collapsible-accordion, .collapsible-header, .collapsible-body{
+    list-style: none;
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    border-bottom: 0;
+    box-shadow: 0 0 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.collapsible-body > a {
+    padding-left: 3.5em;
+}

@@ -1,0 +1,176 @@
+html {
+    overflow: auto;
+}
+
+#contentWrap {
+    top:95px;
+}
+
+.center {
+    padding: 30px 20px;
+    width: auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    background: #262626;
+    min-height: calc(100vh - 92px);
+    z-index: 1;
+}
+
+
+#contentWrap img {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 99%;
+    max-height: 100%;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+td {
+    width: 50%;
+}
+
+.mainContent1 {
+    margin: 30px 0;
+    width: 700px;
+    max-width: 80vw;
+    height:55vmin;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mainContent2 {
+    margin: 30px 0;
+    width: 700px;
+    max-width: 80vw;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#devider {
+    width:10px;
+    height:1px;
+    display: inline-block;
+}
+
+.oskoli {
+    text-align: justify;
+    display:block;
+    font-size: 16pt;
+}
+
+#ruler {
+    position: relative;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    width: 0;
+}
+
+.parallax {
+    background-image: url(../images/putic2.jpg);
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    top:0;
+    left:0;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+
+.parallax-div {
+    margin-top: 40vmin;
+}
+
+.icons {
+    text-align: center;
+    display: block;
+}
+
+.icon {
+    padding: 20px;
+    width: 300px;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.icon i {
+    font-size: 100px;
+    display: block;
+}
+
+.icon span {
+    font-size: 20pt;
+}
+
+@media only screen and (max-width:550px) {
+    .oskoli {
+        font-size: 12pt;
+    }
+    
+    .icon {
+        padding: 15px;
+        width: 300px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+    
+    .icon i {
+        font-size: 75px;
+        display: block;
+    }
+    
+    .icon span {
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (max-width:14000px) {
+    .oskoli {
+        font-size: 15pt;
+    }
+    
+    .icon {
+        padding: 15px;
+        width: 200px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+    
+    .icon i {
+        font-size: 75px;
+        display: block;
+    }
+    
+    .icon span {
+        font-size: 18pt;
+    }
+}
+
+@media only screen and (max-width:300px) {
+    .oskoli {
+        font-size: 12pt;
+    }
+    
+    .icon {
+        padding: 10px;
+        width: 200px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .icon i {
+        font-size: 50px;
+        display: block;
+    }
+    
+    .icon span {
+        font-size: 14pt;
+    }
+}

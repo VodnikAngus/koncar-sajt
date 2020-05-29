@@ -1,0 +1,84 @@
+html {
+    overflow: auto;
+}
+
+p {
+    color: #fff;
+    font-size: 15pt;
+}
+
+#center {
+    width: auto;
+    margin: 0 auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+#center .map {
+    width: 680px;
+    max-width: 80vw;
+    display: inline-block;
+}
+
+iframe {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 50vmin;
+}
+
+#center h2 {
+    left: unset;
+    text-align: center;
+    padding: 10px;
+    width: 680px;
+    max-width: 100%;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+td {
+    width: 50%;
+}
+
+.mapwrap {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height:50vmin;
+}
+
+#devider {
+    width:10px;
+    height:0;
+    display: inline-block;
+}
+
+#mail {
+    margin: 20px auto;
+    width: 1380px;
+}
+
+#mail tr td {
+    width: min-content;
+}
+
+@media only screen and (max-width:1300px) {
+    #devider {
+        width: 0px;
+    }
+
+    #mail {
+        width: 680px;
+        max-width: 80vw;
+    }
+}

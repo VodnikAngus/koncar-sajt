@@ -1,0 +1,16 @@
+
+{
+  "short_name": "Končar",
+  "name": "ЕТŠ \"Rade Končar\"",
+  "icons": [
+    {
+      "src": "assets/images/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#262626",
+  "display": "standalone",
+  "theme_color": "rgb(26, 26, 26)"
+}

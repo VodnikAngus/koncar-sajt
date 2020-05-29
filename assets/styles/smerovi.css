@@ -1,0 +1,107 @@
+#growContainer img {
+    width: 75px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+#growContainer .grow span {
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+    font-size: 4vw;
+    transition: left 500ms, color 500ms;
+    transition-delay: 200ms;
+}
+
+@media only screen and (min-width:550px) {
+    .smer {
+        position: relative;
+        top: calc(150px + 15%);
+        height: calc(70% - 150px);
+    }
+
+        #growContainer {
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100vw;
+            height: calc(70% - 150px);
+            top: calc(150px + 15%);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .grow {
+            background-color: rgb(38, 194, 255);
+            display: table-cell;
+            height: 100%;
+            width: 12.5vw;
+            -webkit-transition: width 500ms, height 500ms;
+            -moz-transition: width 500ms, height 500ms;
+            transition: width 500ms, height 500ms;
+        }
+        
+        #growContainer:hover .grow {
+            width: 8.75vw;
+        }
+        
+        #growContainer:hover .grow:hover {
+            width: 38.75vw;
+        }
+
+        #growContainer .grow span {
+            visibility: hidden;
+            top: calc(50% - 1vw);
+            position: absolute;
+            font-size: 2vw;
+            color: rgba(255, 255, 255, 0);
+            transition: left 500ms, color 500ms;
+            transition-delay: 200ms;
+        }
+
+        .grow {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+        }
+
+        #growContainer:hover .grow:hover span {
+            visibility: visible;
+            color: rgba(255, 255, 255, 1);
+            left: 8.75%;
+        }
+
+        #span1 { left: 8% }
+        #s1:hover #span1 { left: 8.25%}
+
+        #span2 { left: 16.75% }
+        #s2:hover #span2 { left: 17% }
+
+        #span3 { left: 25.5% }
+        #s3:hover #span3 { left: 25.75% }
+
+        #span4 { left: 34.25% }
+        #s4:hover #span4 { left: 34.75% }
+
+        #span5 { left: 43% }
+        #s5:hover #span5 { left: 43.25% }
+
+        #span6 { left: 51.75% }
+        #s6:hover #span6 { left: 52% }
+
+        #span7 { left: 60.5% }
+        #s7:hover #span7 { left: 60.75% }
+
+        #span8 { left: 68.75% }
+        #s8:hover #span8 { left: 69% }
+
+    #growContainer img {
+        padding: 0  1.375vw;
+        position: relative;
+        top: calc(50% - 3vw);
+        width: 8.75vw;
+        display: inline-block;
+    }
+}

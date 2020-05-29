@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="rgb(26, 26, 26)">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Раде Кончар</title>
+        <link rel="shortcut icon" href="../assets/images/small.png">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="manifest" href="../manifest.json">    
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/materialize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/header.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/sidebar.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/hamburgers.css">
+
+        <script src="../assets/scripts/header.js"></script>
+        <script src="../assets/scripts/sidebar.js"></script>
+    </head>
+
+    <body onload="bar()">
+
+        <div class="header">
+            <p>
+                <a
+                    href="https://www.google.rs/maps/place/%D0%91%D1%80%D0%B0%D1%9B%D0%B5+%D0%93%D1%80%D0%B8%D0%BC+32,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4+11000/@44.8149466,20.4795316,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7abde472311b:0x50b961c851a8ce5b!8m2!3d44.8149466!4d20.4817203">
+                    Браће Грим 32
+                </a> | <a
+                    href="https://www.google.rs/maps/place/Electrotechnical+school+%22Rade+Koncar%22/@44.8154566,20.5136807,19.25z/data=!4m12!1m6!3m5!1s0x475a7a5f96e7b5c5:0xed4a63589dc12207!2z0KHRgNC10LTRmtCwINGC0LXRhdC90LjRh9C60LAg0J_QotCiINGI0LrQvtC70LA!8m2!3d44.8157536!4d20.513428!3m4!1s0x0:0x6faf011855e03c26!8m2!3d44.8155927!4d20.5133912">
+                    Сврљишка 1
+                </a>
+                <a id="broj" href="tel: +3812761-963">
+                    011/2761-963
+                </a>
+            </p>
+        </div>
+
+        <div id="navbar" class="nonsticky">
+            <a href="../index.html"><img unselectable="on" class="unselectable"
+                src="../assets/images/koncar.svg" alt="logo" width="100px"></img></a>
+            <div id="burger" class="hamburger hamburger--minus" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </div>
+            <h1><a id="naslov" href="../index.html">Раде Кончар</a></h1>
+            <pre unselectable="on" class="clear unselectable">
+        </div>
+
+        <div id="sidecontainer">
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <ul unselectable="on" class="collapsible collapsible-accordion unselectable">
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../index.html">Почетак</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">О нама <i class="material-icons">keyboard_arrow_down</i></a> 
+                    </div>
+                    <div class="collapsible-body">
+                            <a href="../o nama/upis.html">Упис</a>
+                            <a href="../o nama/oprema.html">Опрема по кабинетима</a>
+                            <a href="../o nama/kroz-istoriju.html">Кроз историју</a>
+                            <a href="../o nama/zaposleni.html">Запослени</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Образовни профили <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../smerovi/rashladni-uredjaji.html">Расхладни уређаји</a>
+                        <a href="../smerovi/procesno-upravljanje.html">Процесно управљање</a>
+                        <a href="../smerovi/energetika.html">Енергетика</a>
+                        <a href="../smerovi/elektronika.html">Електроника</a>
+                        <a href="../smerovi/multimedija.html">Мултимедија</a>
+                        <a href="../smerovi/IT.html">Информационе технологије</a>
+                        <a href="../smerovi/racunari.html">Рачунари</a>
+                        <a href="../smerovi/elektronika-vozila.html">Електроника на возилима</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Ученици <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../vanredni.html">Ванредни ученици</a>
+                        <a href="parlament.html">Ученички парламент</a>
+                        <a href="stop-nasilju.html">Стоп насиљу</a>
+                        <a href="sekcija-energetika.html">Енергетска ефикасност</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Организација рада <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../organizacija rada/statut-propisi-pravilnici.html">Статут, прописи, правилници</a>
+                        <a href="../organizacija rada/dokumenta.html">Документа</a>
+                        <a href="../organizacija rada/savet-roditelja.html">Савет родитеља</a>
+                        <a href="../organizacija rada/skolski-odbor.html">Школски одбор</a>
+                        <a href="../organizacija rada/javne-nabavke.html">Јавне набавке</a>
+                        <a href="../organizacija rada/biblioteka.html">Библиотека</a>
+                        <a href="../organizacija rada/skolski-kalendar.html">Школски календар</a>
+                        <a href="../organizacija rada/koliko-do-zvona.html">Колико до звона</a>
+                        <a href="../organizacija rada/otvorena-vrata.html">Отворена врата</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Наставни материјал <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../nastavni materijal/matura.html">Матура</a>
+                        <a href="../nastavni materijal/spisak-udzbenika.html">Списак уџбеника</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../kontakt.html">Контакт</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contentWrap">
+            <center>
+                <h1>Ученички парламент</h1>
+            </center>
+            <p>
+                <p>Ученички парламент ЕТШ „Раде Кончар“ први пут је основан школске 2003/2004. године и од тада непрестано активно учествује у животу и раду наше школе. Ми верујемо да је Ученички парламент важан из следећих разлога:</p>
+                <br>
+                <ul>
+                    <li>
+                        Ученики парламент гарантује основне слободе наших ученика, кроз остваривање њиховог права на слободу говора, удруживања и изражавања властитог мишљења. Парламент омогућава директнију партиципацију ученика у животу школе и већи утицај на битне одлуке које их се тичу.
+                    </li>
+                    <li>
+                        Посредством парламента ученици могу ускладити своје потребе и интересовања са постојећим садржајима у школи. Парламент може утицати да се развије квалитетнији однос, сарадња и комуникација између ученика, професора и органа школе, чиме се повећава задовољство животом и радом у школи.
+                    </li>
+                    <li>
+                        Парламент омогућава свестрани развој ученика, стицање нових знања и вештина битних за живот у савременом друштву, као што су: сарадња, тимски рад, поштовање, толеранција, недискриминаторно понашање, способност одлучивања, уважавања туђег мишљења, аргументована расправа, преговарање, заступање интереса ученика…
+                    </li>
+                </ul>
+                <br>
+                <p>Због става да је Ученички парламент нашој школи важан, у самом Статуту ученичког парламента нагласили смо да су наши циљеви следећи:</p>
+                <ul>
+                    <li>
+                        активно учешће ученика у образовно – васпитним активностима школе;
+                    </li>
+                    <li>
+                        иницирање и реализација ученичких акција у области науке, културе, спорта, хуманитарног рада и других делатности од интереса за ученике школе;
+                    </li>
+                    <li>
+                        развијање сарадње са Наставничким већем, Школским одбором, Саветом родитеља, руководством школе и локалном заједницом;
+                    </li>
+                    <li>
+                        успостављање и развијање сарадње са другим Ученичким парламентима и организацијама младих;
+                    </li>
+                    <li>
+                        развијање свести о равнотежи између права, дужност и одговорности, као и остваривање права и интереса ученика;
+                    </li>
+                    <li>
+                        подстицање толеранције и демократизације односа у школи и развијање солидарности;
+                    </li>
+                    <li>
+                        усмеравање ка правим друштвеним и цивилизацијским вредностима.
+                    </li>
+                </ul>
+                <br>
+                <p>Надлежности нашег парламента су следеће:</p>
+                <br>
+                <ul>
+                    <li>
+                        давање мишљења и предлога стручним органима, Школском одбору, Савету родитеља и директору о настави, учењу, оцењивању, ученичким иницијативама, слободним и ваннаставним активностима, учешћу на спортским и другим такмичењима и организацији свих манифестација ученика у школи и ван ње;
+                    </li>
+                    <li>
+                        разматрање односа и сарадње ученика и наставника или стручних сарадника;
+                    </li>
+                    <li>
+                        обавештавање ученика о питањима која су од посебног значаја за њихово школовање.
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    Ради ефикаснијег, уређенијег и праведнијег функционисања парламента, од 2015/2016. године рад парламента је уређен и Правилима понашања на седницама ученичког парламента.
+                    <br><br>
+                    Наш парламент чине по два представника сваког одељења у школи, који се бирају на састанку одељењске заједнице. Председништво парламента бирају чланови парламента, а њега чине четири ученика (за сваки разред по један), председник и заменик председника парламента. Како председник и заменик председника парламента учествују и у раду школског одбора, односно проширеног сазива школског одбора, ови ученици треба да буду пунолетни. Чланови председништва, председник, заменик председника и записничар се бирају на првој седници парламента, с тим да се прво изабере заједнички представник свих разреда једне године, а потом и председник.
+                    <br><br>
+                    На првој седници парламента бира се и тим који је задужен за писање дневног реда седница, у чијем саставу се обавезно налази и председник парламента. У плану рада наведене су теме за дебате, а у случају потребе одржавања дебате о неком актуелном проблему у школи и друштвеној средини чланови парламента предлажу замену теме дебате или ванредну седницу.
+                    <br><br>
+                    Заседања Ученичког парламента у нашој школи се организују једанпут месечно, а по потреби и чешће. Сваком заседању присуствује професор који је задужен за координацију рада парламента.
+                    <br><br>
+                    У школској 2016/2017. години председник Ученичког парламента ЕТШ „Раде Кончар“ је Вук Стојнић (4-9), заменик председника је Дарко Марковић (4-6), а записничар је Лука Дедић (3-3). Координатор рада Ученичког парламента је Јелена Говедарица, професорка филозофије.
+                </p>
+            </p>
+        </div>
+
+    </body>
+</html>

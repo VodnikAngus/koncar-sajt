@@ -1,0 +1,54 @@
+.collapsible-header {
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1;
+  padding: 0.3rem;
+}
+.collapsible-header:focus {
+  outline: 0;
+}
+.collapsible-header i {
+  width: 2rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.collapsible-body {
+  display: none;
+  box-sizing: border-box;
+  padding: 0.4rem;
+  padding-left: 0rem;
+}
+
+.sidenav .collapsible,
+.sidenav.fixed .collapsible {
+  border: none;
+  box-shadow: none;
+}
+.sidenav .collapsible li,
+.sidenav.fixed .collapsible li {
+  padding: 0;
+}
+.sidenav .collapsible-header,
+.sidenav.fixed .collapsible-header {
+  background-color: transparent;
+  border: none;
+  line-height: 1;
+  height: inherit;
+}
+.sidenav .collapsible-header:hover,
+.sidenav.fixed .collapsible-header:hover,
+.collapsible-body > a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sidenav .collapsible-header i,
+.sidenav.fixed .collapsible-header i {
+  line-height: 1;
+}
+.sidenav .collapsible-body,
+.sidenav.fixed .collapsible-body {
+  border: 0;
+}
+/*# sourceMappingURL=materialize.css.map */

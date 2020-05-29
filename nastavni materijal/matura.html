@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="rgb(26, 26, 26)">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Раде Кончар</title>
+        <link rel="shortcut icon" href="../assets/images/small.png">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="manifest" href="../manifest.json">    
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/materialize.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/header.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/sidebar.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/hamburgers.css">
+
+        <script src="../assets/scripts/header.js"></script>
+        <script src="../assets/scripts/sidebar.js"></script>
+    </head>
+
+    <body onload="bar()">
+
+        <div class="header">
+            <p>
+                <a
+                    href="https://www.google.rs/maps/place/%D0%91%D1%80%D0%B0%D1%9B%D0%B5+%D0%93%D1%80%D0%B8%D0%BC+32,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4+11000/@44.8149466,20.4795316,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7abde472311b:0x50b961c851a8ce5b!8m2!3d44.8149466!4d20.4817203">
+                    Браће Грим 32
+                </a> | <a
+                    href="https://www.google.rs/maps/place/Electrotechnical+school+%22Rade+Koncar%22/@44.8154566,20.5136807,19.25z/data=!4m12!1m6!3m5!1s0x475a7a5f96e7b5c5:0xed4a63589dc12207!2z0KHRgNC10LTRmtCwINGC0LXRhdC90LjRh9C60LAg0J_QotCiINGI0LrQvtC70LA!8m2!3d44.8157536!4d20.513428!3m4!1s0x0:0x6faf011855e03c26!8m2!3d44.8155927!4d20.5133912">
+                    Сврљишка 1
+                </a>
+                <a id="broj" href="tel: +3812761-963">
+                    011/2761-963
+                </a>
+            </p>
+        </div>
+
+        <div id="navbar" class="nonsticky">
+            <a href="../index.html"><img unselectable="on" class="unselectable"
+                src="../assets/images/koncar.svg" alt="logo" width="100px"></img></a>
+            <div id="burger" class="hamburger hamburger--minus" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </div>
+            <h1><a id="naslov" href="../index.html">Раде Кончар</a></h1>
+            <pre unselectable="on" class="clear unselectable">
+        </div>
+
+        <div id="sidecontainer">
+        </div>
+        
+        <div id="mySidenav" class="sidenav">
+            <ul unselectable="on" class="collapsible collapsible-accordion unselectable">
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../index.html">Почетак</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">О нама <i class="material-icons">keyboard_arrow_down</i></a> 
+                    </div>
+                    <div class="collapsible-body">
+                            <a href="../o nama/upis.html">Упис</a>
+                            <a href="../o nama/oprema.html">Опрема по кабинетима</a>
+                            <a href="../o nama/kroz-istoriju.html">Кроз историју</a>
+                            <a href="../o nama/zaposleni.html">Запослени</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Образовни профили <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../smerovi/rashladni-uredjaji.html">Расхладни уређаји</a>
+                        <a href="../smerovi/procesno-upravljanje.html">Процесно управљање</a>
+                        <a href="../smerovi/energetika.html">Енергетика</a>
+                        <a href="../smerovi/elektronika.html">Електроника</a>
+                        <a href="../smerovi/multimedija.html">Мултимедија</a>
+                        <a href="../smerovi/IT.html">Информационе технологије</a>
+                        <a href="../smerovi/racunari.html">Рачунари</a>
+                        <a href="../smerovi/elektronika-vozila.html">Електроника на возилима</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Ученици <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../vanredni.html">Ванредни ученици</a>
+                        <a href="../ucenici/parlament.html">Ученички парламент</a>
+                        <a href="../ucenici/stop-nasilju.html">Стоп насиљу</a>
+                        <a href="../ucenici/sekcija-energetika.html">Енергетска ефикасност</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Организација рада <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../organizacija rada/statut-propisi-pravilnici.html">Статут, прописи, правилници</a>
+                        <a href="../organizacija rada/dokumenta.html">Документа</a>
+                        <a href="../organizacija rada/savet-roditelja.html">Савет родитеља</a>
+                        <a href="../organizacija rada/skolski-odbor.html">Школски одбор</a>
+                        <a href="../organizacija rada/javne-nabavke.html">Јавне набавке</a>
+                        <a href="../organizacija rada/biblioteka.html">Библиотека</a>
+                        <a href="../organizacija rada/skolski-kalendar.html">Школски календар</a>
+                        <a href="../organizacija rada/koliko-do-zvona.html">Колико до звона</a>
+                        <a href="../organizacija rada/otvorena-vrata.html">Отворена врата</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Наставни материјал <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="matura.html">Матура</a>
+                        <a href="spisak-udzbenika.html">Списак уџбеника</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../kontakt.html">Контакт</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contentWrap">
+            <center>
+                <h1>Матура</h1>
+            </center>
+            <p>
+                <a href="../content/matura/primer popunjavanja prijave.pdf">Пример попуњене пријаве за матуру</a>
+                <br>
+                <br>
+                <ul unselectable="on" class="collapsible collapsible-accordion unselectable">
+                    <li>
+                        <div class="collapsible-header" tabindex="0">
+                            <h2>Предмети из којих се бирају теме за матурски испит</h2>
+                        </div>
+                        <div class="collapsible-body">
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Visokofrekvencijska-elektronika-maturski-rad.pdf" target="_blank" rel="noopener">Високофреквенцијска електроника</a> – предметни наставник Гордана Раичевић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/maturski-ispit-elektricna-postrojenja.pdf" target="_blank" rel="noopener">Електрична постројења</a> – предметни наставник Весна Пуртић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/El.-mas.-sa-isp-teme-IV4.pdf" target="_blank" rel="noopener">Електричне машине са испитивањем 4-4</a> -предметни наставник Душан Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/El.-masine-teme-IV23.pdf" target="_blank" rel="noopener">Електричне машине 4-2,3</a> – предметни наставник Душан Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Miki-teme-El.-inst..pdf" target="_blank" rel="noopener">Електричне инсталације и осветљење</a> – предметни наставник Миленковић Мирослав</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Elektricne-mreze-teme.pdf" target="_blank" rel="noopener">Електричне мреже</a> – предметни наставник Жељко Стојановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/El.-pokretanje-teme.pdf" target="_blank" rel="noopener">Електрично покретање</a> – предметни наставник Бојан Ђокић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Maturski-201819-Elektronski-medicinski-uredjaji-1.pdf" target="_blank" rel="noopener">Електронски медицински уређаји</a> – предметни наставник Младен Живановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Elektronski-pojačavači-maturski-rad-1.pdf" target="_blank" rel="noopener">Електронски појачавачи</a> -предметни наставник Гордана Раичевић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/maturski-ispit-elektrotermicki-uredjaji.pdf" target="_blank" rel="noopener">Електротермички уређаји</a> – предметни наставник Весна Пуртић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/OIE-teme-Nataša-IV2.pdf" target="_blank" rel="noopener">Обновљиви извори енергије</a> – предметни наставник Наташа Војводић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/maturski-ispit-obnovljivi-izvori-energije.pdf" target="_blank" rel="noopener">Обновљиви извори енергије</a> – предметни наставник Весна Пуртић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Osnove-audiotehnike-maturski-rad-1.pdf" target="_blank" rel="noopener">Основе аудиотехнике</a> – предметни наставник Гордана Раичевић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Os.-aut.-up-teme.pdf" target="_blank" rel="noopener">Основе аутоматског управљања</a> – предметни наставник Александар Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Osnove-videotehnike-temе-20182c-2019-1.pdf" target="_blank" rel="noopener">Основе видеотехнике</a> – предметни наставник Драгана Јовић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Теме-за-матурски-Rada-испит-из-предмета-ПРИМЕЊЕНА-АУДИО-И-ВИДЕО-ТЕХНИКА-2019.pdf" target="_blank" rel="noopener">Примењена аудио и видео техника</a> – предметни наставник Радмила Митровић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/ТЕМЕ-ЗА-МАТУРСКИ-ИСПИТ-2-PLC.pdf" target="_blank" rel="noopener">Програмабилни логички контролери</a> – предметни наставник Новка Ђерић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Производња-ММ-садржаја-матурске-теме-2018-19-1.pdf" target="_blank" rel="noopener">Производња мултимедијалног садржаја</a> – предметни наставник Јелена Пауновић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Programiranje-maturski.pdf" target="_blank" rel="noopener">Програмирање</a> – предметни наставници Гордана Танасковић и Милица Здравковић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Proj.-el.-inst-teme.pdf" target="_blank" rel="noopener">Пројектовање електричних инсталација и осветљења</a> – предметни наставник Александар Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Теме-Buzatov-за-матурски-испит-из-расхладних-уређаја.pdf" target="_blank" rel="noopener">Расхладни уређаји</a> – предметни наставник Снежана Бузатов</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunari-IV11-teme-Bugarendic.pdf" target="_blank" rel="noopener">Рачунари</a> – предметни наставник Милош Бугарендић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunari-IV10-Zivanovic-teme.pdf" target="_blank" rel="noopener">Рачунари</a> -предметни наставник Младен Живановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunari-i-programiranje-teme-Bugarendic.pdf" target="_blank" rel="noopener">Рачунари и програмирање</a> – предметни наставник Милош Бугарендић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunarske-mreze-i-komunikacije-teme-Grada-Stevan-IV10.pdf" target="_blank" rel="noopener">Рачунарске мреже и комуникације</a> – предметни наставници Градимир Савић и Стеван Милановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunarske-mreze-i-komunikacije-IV11-Rada-Mitrovic.pdf" target="_blank" rel="noopener">Рачунарске мреже и комуникације</a> – предметни наставник Радмила Митровић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Miki-teme-Upravljanje-EMP.pdf" target="_blank" rel="noopener">Управљање електромоторним погоном</a> – предметни наставник Миленковић Мирослав</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header" tabindex="0">
+                            <h2>Предмети који се бирају за изборни - испитна питања</h2>
+                        </div>
+                        <div class="collapsible-body">
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Visokofrekvencijska-elektronika-izborni-predmet-1.pdf" target="_blank" rel="noopener">Високофреквенцијска електроника</a> – предметни наставник Гордана Раичевић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/elektricna-postrojenja-izborni.pdf" target="_blank" rel="noopener">Електрична постројења</a> – предметни наставник Весна Пуртић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/El.-mas.-sa-isp-pitanja-IV14.pdf" target="_blank" rel="noopener">Електричне машине са испитивањем 4-1,4</a> – предметни наставник Душан Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/El.-masine-pitanja-IV23.pdf" target="_blank" rel="noopener">Електричне машине 4-2,3</a> – предметни наставник Душан Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Питања-за-Електрична-мерења4123.pdf" target="_blank" rel="noopener">Електрична мерења</a>–</p>
+                            <p>за смерове Електротехничар термичких и расхладних уређаја и смер Електротехничар енергетике</p>
+                            <p>– предметни наставник Соња Ратковић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Питања-за-Електрична-мерења34.pdf" target="_blank" rel="noopener">Електрична мерења</a> - за смер Електротехничар процесног управљања – предметни наставник Соња Ратковић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Elektricne-mreze-pitanja.pdf" target="_blank" rel="noopener">Електричне мреже</a> – предметни наставник Жељко Стојановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/El.-pokretanje-pitanja.pdf" target="_blank" rel="noopener">Електрично покретање</a> – предметни наставник Бојан Ђокић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/EMP-pitanja.pdf" target="_blank" rel="noopener">Електромоторни погони</a> – предметни наставник Бојан Ђокић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Pitanja-izborni-Elektronski-medicinski-uredjaji-2.pdf" target="_blank" rel="noopener">Електронски медицински уређаји</a> – предметни наставник Младен Живановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Elektronski-pojačavači-izborni-predmet.pdf" target="_blank" rel="noopener">Електронски појачавачи</a> -предметни наставник Гордана Раичевић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/elektrotermicki-uredjaji-izborni.pdf" target="_blank" rel="noopener">Електротермички уређаји</a> – предметни наставник Весна Пуртић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/En.-el-pitanja.pdf" target="_blank" rel="noopener">Енергетска електроника и Електроника у енергетици</a> – предметни наставник Наташа Војводић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/maturski-zadaci-matematika.pdf" target="_blank" rel="noopener">Математика</a> – предметни наставници Мирјана Јовчић,Данијела Михајловић Петровић и Бранка Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Питања-за-Мерења-у-ел.енергетици41234.pdf" target="_blank" rel="noopener">Мерења у електроенергетици</a> – предметни наставник Соња Ратковић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Osnove-audiotehnike-izborni-predmet.pdf" target="_blank" rel="noopener">Основе аудиотехнике</a> – предметни наставник Гордана Раичевић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Os.-aut.-up.-pitanja.pdf" target="_blank" rel="noopener">Основе аутоматског управљања</a> – предметни наставник Александар Савић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Osnove-videotehnike-Jovic-D-izborni.pdf" target="_blank" rel="noopener">Основе видеотехнике</a> – предметни наставник Драгана Јовић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/изборни-Rada-M-из-предмета-Примењена-аудио-и-видео-техника-2019.pdf" target="_blank" rel="noopener">Примењена аудио и видео техника</a> – предметни наставник Радмила Митровић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/izborni-PLC.pdf" target="_blank" rel="noopener">Програмабилни логички контролери</a> – предметни наставник Новка Ђерић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Programiranje-izborni.pdf" target="_blank" rel="noopener">Програмирање</a> – предметни наставници Гордана Танасковић и Милица Здравковић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Производња-мултимедијалног-садржаја2c-изборни-2018-19-1.pdf" target="_blank" rel="noopener">Производња мултимедијалног садржаја</a> – предметни наставник Јелена Пауновић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Питања-Buzatov-за-изборни-предмет-из-расхладних-уређаја.pdf" target="_blank" rel="noopener">Расхладни уређаји</a> – предметни наставник Снежана Бузатов</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunari-Bugarendic-Zivanovici-izborni.pdf" target="_blank" rel="noopener">Рачунари</a> – предметни настаници Милош Бугарендић и Младен Живановић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunari-i-programiranje-Bugarendic-pitanja.pdf" target="_blank" rel="noopener">Рачунари и програмирање</a> – предметни наставник Милош Бугарендић</p>
+                            <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/12/Racunarske-mreze-i-komunikacije-izborni-Grada-RadaStevan.pdf" target="_blank" rel="noopener">Рачунарске мреже и комуникације</a> – предметни наставници Радмила Митровић,Градимир Савић и Стеван Милановић</p>
+                        </div>
+                    </li>
+                </ul>
+                <br>
+            </p><p>
+                <a href="http://koncar.edu.rs/wp-content/uploads/2015/09/Упутства-за-матурски-из-српског-језика.pdf" target="_blank" rel="noopener">Упутство за писање матурског рада из српског језика и књижевности</a>
+                <br><br>
+                <a href="http://www.koncar.edu.rs/wp-content/uploads/2015/09/uputstvo-za-izradu-maturskog-rada.doc">Упутство за израду матурског рада</a>
+                <br><br>
+                <a href="http://www.koncar.edu.rs/wp-content/uploads/2015/10/izgled-rada.doc">Изглед матурског рада</a>
+            </p>
+        </div>
+
+    </body>
+</html>

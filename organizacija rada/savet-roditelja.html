@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="rgb(26, 26, 26)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Раде Кончар</title>
+    <link rel="shortcut icon" href="../assets/images/small.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">    
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/materialize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/header.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/sidebar.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/styles/hamburgers.css">
+
+    <script src="../assets/scripts/header.js"></script>
+    <script src="../assets/scripts/sidebar.js"></script>
+</head>
+
+<body onload="bar()">
+
+    <div class="header">
+        <p>
+            <a
+                href="https://www.google.rs/maps/place/%D0%91%D1%80%D0%B0%D1%9B%D0%B5+%D0%93%D1%80%D0%B8%D0%BC+32,+%D0%91%D0%B5%D0%BE%D0%B3%D1%80%D0%B0%D0%B4+11000/@44.8149466,20.4795316,17z/data=!3m1!4b1!4m5!3m4!1s0x475a7abde472311b:0x50b961c851a8ce5b!8m2!3d44.8149466!4d20.4817203">
+                Браће Грим 32
+            </a> | <a
+                href="https://www.google.rs/maps/place/Electrotechnical+school+%22Rade+Koncar%22/@44.8154566,20.5136807,19.25z/data=!4m12!1m6!3m5!1s0x475a7a5f96e7b5c5:0xed4a63589dc12207!2z0KHRgNC10LTRmtCwINGC0LXRhdC90LjRh9C60LAg0J_QotCiINGI0LrQvtC70LA!8m2!3d44.8157536!4d20.513428!3m4!1s0x0:0x6faf011855e03c26!8m2!3d44.8155927!4d20.5133912">
+                Сврљишка 1
+            </a>
+            <a id="broj" href="tel: +3812761-963">
+                011/2761-963
+            </a>
+        </p>
+    </div>
+
+    <div id="navbar" class="nonsticky">
+        <a href="../index.html"><img unselectable="on" class="unselectable" src="../assets/images/koncar.svg" alt="logo"
+                width="100px"></img></a>
+        <div id="burger" class="hamburger hamburger--minus" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner">
+            
+        </div>
+        <h1><a id="naslov" href="../index.html">Раде Кончар</a></h1>
+        <pre unselectable="on" class="clear unselectable">
+        </div>
+
+        <div id="sidecontainer">
+        </div>
+        
+         <div id="mySidenav" class="sidenav">
+            <ul unselectable="on" class="collapsible collapsible-accordion unselectable">
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../index.html">Почетак</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">О нама <i class="material-icons">keyboard_arrow_down</i></a> 
+                    </div>
+                    <div class="collapsible-body">
+                            <a href="../o nama/upis.html">Упис</a>
+                            <a href="../o nama/oprema.html">Опрема по кабинетима</a>
+                            <a href="../o nama/kroz-istoriju.html">Кроз историју</a>
+                            <a href="../o nama/zaposleni.html">Запослени</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Образовни профили <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../smerovi/rashladni-uredjaji.html">Расхладни уређаји</a>
+                        <a href="../smerovi/procesno-upravljanje.html">Процесно управљање</a>
+                        <a href="../smerovi/energetika.html">Енергетика</a>
+                        <a href="../smerovi/elektronika.html">Електроника</a>
+                        <a href="../smerovi/multimedija.html">Мултимедија</a>
+                        <a href="../smerovi/IT.html">Информационе технологије</a>
+                        <a href="../smerovi/racunari.html">Рачунари</a>
+                        <a href="../smerovi/elektronika-vozila.html">Електроника на возилима</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Ученици <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../vanredni.html">Ванредни ученици</a>
+                        <a href="../ucenici/parlament.html">Ученички парламент</a>
+                        <a href="../ucenici/stop-nasilju.html">Стоп насиљу</a>
+                        <a href="../ucenici/sekcija-energetika.html">Енергетска ефикасност</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Организација рада <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="statut-propisi-pravilnici.html">Статут, прописи, правилници</a>
+                        <a href="dokumenta.html">Документа</a>
+                        <a href="savet-roditelja.html">Савет родитеља</a>
+                        <a href="skolski-odbor.html">Школски одбор</a>
+                        <a href="javne-nabavke.html">Јавне набавке</a>
+                        <a href="biblioteka.html">Библиотека</a>
+                        <a href="skolski-kalendar.html">Школски календар</a>
+                        <a href="koliko-do-zvona.html">Колико до звона</a>
+                        <a href="otvorena-vrata.html">Отворена врата</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="" onclick="return false;">Наставни материјал <i class="material-icons">keyboard_arrow_down</i></a>
+                    </div>
+                    <div class="collapsible-body">
+                        <a href="../nastavni materijal/matura.html">Матура</a>
+                        <a href="../nastavni materijal/spisak-udzbenika.html">Списак уџбеника</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header" tabindex="0">
+                        <a href="../kontakt.html">Контакт</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contentWrap">
+            <center>
+                <h1>Савет родитеља</h1>
+            </center>
+            <p>
+                <h2>Школска 2018/19.</h2>
+                <h2>Трећи састанак савета подитеља ЕТШ „Раде Кончар“</h2>
+                <p>одржаће се у среду, 13.03.2019. године са почетком у 19:00 часова у свечаној сали школе.</p>
+                <br>
+                <h2>Предлог дневног реда:</h2>
+                <ol>
+                <li>Извештај о успеху ученика на крају првог полугодишта.</li>
+                <li>Васпитна улога породице</li>
+                <li>Екскурзије – да или не (предлози родитеља)</li>
+                <li>Разговор о актуелним темама </li>
+                </ol>
+                <p>више о томе можете прочитати : <a href="http://bit.ly/2EThEQp">http://bit.ly/2EThEQp</a></p>
+                <br>
+                <h2>Други састанак савета родитеља ЕТШ „Раде Кончар“</h2>
+                <p>одржаће се у среду, 28.11. 2018. године са почетком у 19:00 часова у свечаној сали школе.</p>
+                <br>
+                <h2>Предлог дневног реда:</h2>
+                <ol>
+                    <li>Успех и владање ученика на крају првог класификационог периода.</li>
+                    <li>Предлог мера за унапређивање образовно-васпитног рада.</li>
+                    <li>Савети за активно укључење родитеља у образовање деце.</li>
+                    <li>Безбедност ученика.</li>
+                    <li>Разговор о актуелним темама.</li>
+                </ol>
+                <p>Београд, 24.11.2018.</p>
+                <p>Александра Милошевић,</p>
+                <p>записничар</p>
+                <br>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2018/11/analiza-uspeha-1.tromesecje-2018-19-1.pdf">Анализа успеха на крају I класификационог периода</a></p>
+                <ul>
+                <li><a href="http://koncar.edu.rs/wp-content/uploads/2018/11/1.SASTANAK-SAVETA-ZAPISNIK-1.pdf">Записник са првог састанка савета родитеља</a></li>
+                </ul>
+                <br>
+                <h2>Чланови савета родитеља</h2>
+                <p>у школској 2018/2019. години</p>
+                <br>
+                <table>
+                <tbody>
+                <tr>
+                    <th colspan="2">Први разред</th>
+                </tr>
+                <tr>
+                <td>I-1</td>
+                <td>Арсић Снежана</td>
+                </tr>
+                <tr>
+                <td>I-2</td>
+                <td>Ђорђевић Јелена</td>
+                </tr>
+                <tr>
+                <td>I-3</td>
+                <td>Нешић Зоран</td>
+                </tr>
+                <tr>
+                <td>I-4</td>
+                <td>Јовановић Јелена</td>
+                </tr>
+                <tr>
+                <td>I-5</td>
+                <td>Вељковић Дијана</td>
+                </tr>
+                <tr>
+                <td>I-6</td>
+                <td>Пуач Славица</td>
+                </tr>
+                <tr>
+                <td>I-7</td>
+                <td>Димитријевић Ненад</td>
+                </tr>
+                <tr>
+                <td>I-8</td>
+                <td>ПетровићМиломир</td>
+                </tr>
+                <tr>
+                <td>I-9</td>
+                <td>Сретеновић Саша</td>
+                </tr>
+                <tr>
+                <td>I-10</td>
+                <td>Николић Ненад</td>
+                </tr>
+                <tr>
+                <td>I-11</td>
+                <td>Бернер Ивана</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Други разред</th>
+                </tr>
+                <tr>
+                <td>II-1</td>
+                <td>Савић Сања</td>
+                </tr>
+                <tr>
+                <td>II-2</td>
+                <td>Анелић Ивана</td>
+                </tr>
+                <tr>
+                <td>II-3</td>
+                <td>Неогради Слађана</td>
+                </tr>
+                <tr>
+                <td>II-4</td>
+                <td>Николић Ненад</td>
+                </tr>
+                <tr>
+                <td>II-5</td>
+                <td>Јовановић Милана</td>
+                </tr>
+                <tr>
+                <td>II-6</td>
+                <td>Ћирковић Саша</td>
+                </tr>
+                <tr>
+                <td>II-7</td>
+                <td>Кордеј Мирјана</td>
+                </tr>
+                <tr>
+                <td>II-8</td>
+                <td>Прчетић Мирјана</td>
+                </tr>
+                <tr>
+                <td>II-9</td>
+                <td>Михајловић Иван</td>
+                </tr>
+                <tr>
+                <td>II-10</td>
+                <td>Малиновић Гордана</td>
+                </tr>
+                <tr>
+                <td>II-11</td>
+                <td>Радивојевић Снежана</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Трећи разред</th>
+                </tr>
+                <tr>
+                <td>III-1</td>
+                <td>Димитријевић Симоновић Драгана</td>
+                </tr>
+                <tr>
+                <td>III-2</td>
+                <td>Пештерић Драгана</td>
+                </tr>
+                <tr>
+                <td>III-3</td>
+                <td>Новаковић Драган</td>
+                </tr>
+                <tr>
+                <td>III-4</td>
+                <td>Страњина Маја</td>
+                </tr>
+                <tr>
+                <td>III-5</td>
+                <td>Поплишан Јелена</td>
+                </tr>
+                <tr>
+                <td>III-6</td>
+                <td>Егић Татјана</td>
+                </tr>
+                <tr>
+                <td>III-7</td>
+                <td>Мачкашки Драгана</td>
+                </tr>
+                <tr>
+                <td>III-8</td>
+                <td>Величковић Ђорђе</td>
+                </tr>
+                <tr>
+                <td>III-9</td>
+                
+                </tr>
+                <tr>
+                <td>III-10</td>
+                <td>Букилић Бојан</td>
+                </tr>
+                <tr>
+                <td>III-11</td>
+                <td>Шујдовић Биљана</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Четврти разред</th>
+                </tr>
+                <tr>
+                <td>IV-1</td>
+                <td>Марковић Јелена</td>
+                </tr>
+                <tr>
+                <td>IV-2</td>
+                <td>Неранџић Вида</td>
+                </tr>
+                <tr>
+                <td>IV-3</td>
+                <td>Станковић Жаклина</td>
+                </tr>
+                <tr>
+                <td>IV-4</td>
+                <td>Јовичић Драган</td>
+                </tr>
+                <tr>
+                <td>IV-5</td>
+                <td>Зарић Златан</td>
+                </tr>
+                <tr>
+                <td>IV-6</td>
+                <td>Вешковић Драгана</td>
+                </tr>
+                <tr>
+                <td>IV-7</td>
+                <td>Орешчанин Зорица</td>
+                </tr>
+                <tr>
+                <td>IV-8</td>
+                <td>Маринковић Милица</td>
+                </tr>
+                <tr>
+                <td>IV-9</td>
+                <td>Кнежевић Зоран</td>
+                </tr>
+                <tr>
+                <td>IV-10</td>
+                <td>Балтић Хеда</td>
+                </tr>
+                <tr>
+                <td>IV-11</td>
+                <td>Пантелић Александра</td>
+                </tr>
+                </tbody>
+                </table>
+                <br>
+                <h2>Школска 2017/18.</h2>
+                <h2>Четврти састанак савета родитеља ЕТШ „Раде Кончар“</h2>
+                <p>oдржаће се у уторак, 8. маја 2018. године са почетком у 17:30 часова у свечаној сали</p>
+                <p>Материјал за састанак доступан је на следећем линку: <a href="https://tinyurl.com/ybnsen9n">https://tinyurl.com/ybnsen9n</a></p>
+                <br>
+                <h2>Трећи састанак савета родитеља ЕТШ „Раде Кончар“</h2>
+                <p>одржаће се у четвртак, 1.3.2018. године са почетком у 17:30 часова.</p>
+                <p>Материјал за састанак можете преузети преко следећег линка: <a id="LPlnk984507" href="https://tinyurl.com/yapwbspk" target="_blank" rel="noopener noreferrer">https://tinyurl.com/yapwbspk</a></p>
+                <br>
+                <p>Други састанак савета родитеља ЕТШ „Раде Кончар“</p>
+                <p>одржаће се у уторак, 28.11. 2017. године са почетком у 17:00 часова у свечаној сали школе.</p>
+                <br>
+                <p>Предлог дневног реда:</p>
+                <ol>
+                    <li>Успех и владање ученика на крају првог класификационог периода.</li>
+                    <li>Предлог мера за унапређивање образовно-васпитног рада.</li>
+                    <li>Савети за активно укључење родитеља у образовање деце.</li>
+                    <li>Безбедност ученика.</li>
+                    <li>Разговор о актуелним темама.</li>
+                </ol>
+                <br>
+                <p>Mатеријал за 2. састанак Савета родитеља можете преузети на следећем линку <a href="http://koncar.edu.rs/wp-content/uploads/2015/09/analiza-uspeha-1.tromesecje-2017-18-1-1.pptx">Анализа успеха 1. тромесечја</a></p>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2015/09/SAVETI-ZA-RODITELJE.pdf">Прочитајте и ово</a></p>
+                <p>Београд,</p>
+                <p>24.11.2017.</p>
+                <p>Александра Милошевић,</p>
+                <p>Записничар</p>
+                <br>
+                <h2>Четврти састанак савета родитеља</h2>
+                <p>одржаће се у четвртак, 18. маја 2017. са почетком у 17:00 часова у свечаној сали школе.</p>
+                <p>После састанка Савета биће одржана Трибина за родитеље инспектора ПУ Београд на тему превенције насиља и безбедности са дискусијом.</p>
+                <br>
+                <p>Предлог дневног реда:</p>
+                <ol>
+                    <li>Разматрање извештаја о постигнутим резултатима на крају трећег тромесечја.</li>
+                    <li>Разматрање предлога екскурзија ученика у наредној школској години.</li>
+                    <li>Предлози родитеља за унапређење рада у наредној школској години</li>
+                    <li>Предлог о износу накнаде за текуће трошкове у наредној школској години</li>
+                    <li>Предлози за план рада Савета родитеља за наредну школску годину.</li>
+                </ol>
+                <br>
+                <p>Mатеријал за 4. састанак Савета родитеља можете преузети на следећем линку<a id="LPlnk325999" class="x_OWAAutoLink" href="https://tinyurl.com/mhscgdj" target="_blank" rel="noopener noreferrer">https://tinyurl.com/mhscgdj</a></p>
+                <p>Београд,</p>
+                <p>16.5.2017.</p>
+                <br>
+                <h2>Чланови саветав родитеља</h2>
+                <p>у школској 2016/2017. години</p>
+                <br>
+                <table>
+                <tbody>
+                <tr>
+                    <th colspan="2">Први разред</th>
+                </tr>
+                <tr>
+                <td>I-1</td>
+                <td>СИМОНОВИЋ ДРАГАНА</td>
+                </tr>
+                <tr>
+                <td>I-2</td>
+                <td>ПЕШТЕРИЋ ДРАГАНА</td>
+                </tr>
+                <tr>
+                <td>I-3</td>
+                <td>МИТРОВИЋ ДАРКО</td>
+                </tr>
+                <tr>
+                <td>I-4</td>
+                <td>СТРАЊИНА МАЈА</td>
+                </tr>
+                <tr>
+                <td>I-5</td>
+                <td>ПОПЛИШАН ЈЕЛЕНА</td>
+                </tr>
+                <tr>
+                <td>I-6</td>
+                <td>ЕГИЋ ТАТЈАНА</td>
+                </tr>
+                <tr>
+                <td>I-7</td>
+                <td>СПАЈИЋ МАНУЕЛА</td>
+                </tr>
+                <tr>
+                <td>I-8</td>
+                <td>ВЕЛИЧКОВИЋ ЂОРЂЕ</td>
+                </tr>
+                <tr>
+                <td>I-9</td>
+                <td>АРБИНА АРНОЛД</td>
+                </tr>
+                <tr>
+                <td>I-10</td>
+                <td>ТОДОРИЋ ГОРАН</td>
+                </tr>
+                <tr>
+                <td>I-11</td>
+                <td>МАЛЕТИЋ ЖЕЉКО</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Други разред</th>
+                </tr>
+                <tr>
+                <td>II-1</td>
+                <td>МАТИЋ МОМЧИЛО</td>
+                </tr>
+                <tr>
+                <td>II-2</td>
+                <td>НЕРАНЏИЋ ВИДА</td>
+                </tr>
+                <tr>
+                <td>II-3</td>
+                <td>СТАНКОВИЋ ЖАКЛИНА</td>
+                </tr>
+                <tr>
+                <td>II-4</td>
+                <td>КОТУРОВИЋ ДУШАН</td>
+                </tr>
+                <tr>
+                <td>II-5</td>
+                <td>БАСТА ЂУРО</td>
+                </tr>
+                <tr>
+                <td>II-6</td>
+                <td>ВЕШКОВИЋ ДРАГАНА</td>
+                </tr>
+                <tr>
+                <td>II-7</td>
+                <td>СТАНКОВИЋ ЈОВАН</td>
+                </tr>
+                <tr>
+                <td>II-8</td>
+                <td>МАРИНКОВИЋ МИЛИЦА</td>
+                </tr>
+                <tr>
+                <td>II-9</td>
+                <td>МАРИЈАНОВИЋ СНЕЖАНА</td>
+                </tr>
+                <tr>
+                <td>II-10</td>
+                <td>РАДОЊИЋ СЛАЂАНА</td>
+                </tr>
+                <tr>
+                <td>II-11</td>
+                <td>ЈЕЛИСАВЧИЋ СЛАВИЦА</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Трећи разред</th>
+                </tr>
+                <tr>
+                <td>III-1</td>
+                <td>КУШТРИМОВИЋ ДРАЖЕН</td>
+                </tr>
+                <tr>
+                <td>III-2</td>
+                <td>НИКОЛИЋ МИРЈАНА</td>
+                </tr>
+                <tr>
+                <td>III-3</td>
+                <td>РАКИЋ ЈЕЛЕНА</td>
+                </tr>
+                <tr>
+                <td>III-4</td>
+                <td>МАРЈАНОВИЋ ИДА</td>
+                </tr>
+                <tr>
+                <td>III-5</td>
+                <td>БУКВИЋ МИЛЕНКО</td>
+                </tr>
+                <tr>
+                <td>III-6</td>
+                <td>МАКСИЋ ДРАГИЦА</td>
+                </tr>
+                <tr>
+                <td>III-7</td>
+                <td>НОВОГРАДЕЦ ЈАСНА</td>
+                </tr>
+                <tr>
+                <td>III-8</td>
+                <td>ЂОРЂЕВИЋ СНЕЖАНА</td>
+                </tr>
+                <tr>
+                <td>III-9</td>
+                <td>ЋИРОВИЋ МИЛОЈЕ</td>
+                </tr>
+                <tr>
+                <td>III-10</td>
+                <td>ШПАНОВИЋ БОЖАН</td>
+                </tr>
+                <tr>
+                <td>III-11</td>
+                <td>ЈОВАНОВИЋ ДРАГАН</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Четврти разред</th>
+                </tr>
+                <tr>
+                <td>IV-13</td>
+                <td>ЛЕВАЈАЦ ИВАН</td>
+                </tr>
+                <tr>
+                <td>IV-2</td>
+                <td>АНТОНИЈЕВИЋ МИРОСЛАВ</td>
+                </tr>
+                <tr>
+                <td>IV-4</td>
+                <td>РАКИЋ ДЕЈАН</td>
+                </tr>
+                <tr>
+                <td>IV-5</td>
+                <td>ЈОВАНОВИЋ СВЕТЛАНА</td>
+                </tr>
+                <tr>
+                <td>IV-6</td>
+                <td>МИЈАИЛОВИЋ ЗОРИЦА</td>
+                </tr>
+                <tr>
+                <td>IV-7</td>
+                <td>БОГДАНОВИЋ ВЛАДАНА<br>
+                    СТЕВАНОВИЋ ЛИДИЈА</td>
+                </tr>
+                <tr>
+                <td>IV-8</td>
+                <td>ВУЈИЋ СУЗАНА</td>
+                </tr>
+                <tr>
+                <td>IV-9</td>
+                <td>МИЛОШЕВИЋ СРБОЉУБ</td>
+                </tr>
+                <tr>
+                <td>IV-10</td>
+                <td>ИСИДОРОВИЋ ЗЛАТОМИР</td>
+                </tr>
+                <tr>
+                <td>IV-11</td>
+                <td>РОМАНИЋ НАТАША (заменик СТАНКОВИЋ МАРИЈАНА)</td>
+                </tr>
+                </tbody>
+                </table>
+                <br>
+                <p><a href="http://www.m2m.rs:8080/wp1/wordpress/wp-content/uploads/2015/09/програм-рада-Савета-родитеља.pdf" target="_blank" rel="noopener noreferrer">Програм Савета родитеља</a></p>
+                <p>Рад Савета родитеља у школској 2017/2018. години</p>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2015/09/1.SASTANAK-SAVETA-ZAPISNIK.docx">Записник са првог састанка Савета родитеља</a></p>
+                <p>Рад Савета родитеља у школској 2016/2017. години</p>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2015/09/1.SASTANAK-SAVETA-ZAPISNIK.pdf" target="_blank" rel="noopener noreferrer">Записник са првог састанка Савета родитеља</a></p>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2015/09/2.SASTANAK-SAVETA-ZAPISNIK.pdf" target="_blank" rel="noopener noreferrer">Записник са другог састанка Савета родитеља</a></p>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2015/09/3.SASTANAK-SAVETA-ZAPISNIK.pdf" target="_blank" rel="noopener noreferrer">Записник са трећег састанка Савета родитеља</a></p>
+                <p><a href="http://koncar.edu.rs/wp-content/uploads/2016/09/zapisnik-CETVRTI-SASTANAK-SAVETA-RODITELJA-2015.2016..docx" target="_blank" rel="noopener noreferrer">Записник са четвртог састанка Савета родитеља</a></p>
+                <p>Материјал за трећи састанак Савета родитеља, који ће се одржати у четвртак, 9.3.2017. године са почетком у 17:30 часова можете преузети на овом линку :<a href="https://tinyurl.com/gvm4ys9" target="_blank" rel="noopener noreferrer">https://tinyurl.com/gvm4ys9</a></p>
+                <p>све примедбе на записник можете писати професору задуженом за рад са Саветом на <a href="mailto:a.milosevic@koncar.edu.rs" target="_blank" rel="noopener noreferrer">a.milosevic@koncar.edu.rs</a></p>
+            </p>
+        </div>
+
+    </body>
+</html>
